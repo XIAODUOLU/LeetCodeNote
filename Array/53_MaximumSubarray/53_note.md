@@ -7,7 +7,7 @@ Given an integer array `nums` , find the subarray with the largest `sum` , and r
 
 ## Example
 ```
-Example 1:
+Example 1: 
 
 Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
@@ -32,7 +32,7 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 * -10^4 <= nums[i] <= 10^4
 ## 解决思路
 ### 初始想法
-从第一个元素开始，双层循环遍历，计算sum值并进行比较。最终返回结果最大值。
+从第一个元素开始，双层循环遍历nums，计算sum值并进行比较。最终返回结果最大值。
 ### 动态规划
 计算以第i个元素结尾的连续子序列的最大sum值f(i)。可知该值为max(f(i-1)+nums[i],nums[i])。因此可通过一次遍历比较。
 
